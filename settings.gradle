@@ -1,0 +1,2 @@
+include ':app', ':iotmakers_sdk_android', ':JAVA_TCP_SDK_2.0.1', ':MPChartLib'
+project(':MPChartLib').projectDir = new File('app/libs/MPAndroidChart-3.1.0-alpha/MPChartLib')

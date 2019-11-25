@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".UserManagement.Register_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="bottom|center"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            />
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RegisterEmailTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/RegisterEmailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_mail_black_24dp"
+                    android:drawableStart="@drawable/ic_mail_black_24dp"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RegisterPasswordTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/RegisterPasswordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RegisterPasswordConfirmTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/RegisterPasswordConfirmText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RegisterNameTextInputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/RegisterNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BirthDay"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/SelectBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YYYY-MM-DD"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/GenderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/GenderWoman"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/GenderMan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="REGISTRATION"
+                android:textStyle="bold"
+                android:background="#666666"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
